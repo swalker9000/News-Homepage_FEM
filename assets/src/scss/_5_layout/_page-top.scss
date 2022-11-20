@@ -1,0 +1,35 @@
+body {
+    margin: 80px 150px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include body-copy;
+
+
+
+    header {
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+
+        nav ul {
+            display: inline-flex;
+            flex-direction: row;
+
+            li {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0px 0px 0px 60px;
+                color: $Dark-grayish-blue;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 16px;
+                color: $Grayish-blue;
+            }
+        }
+
+    }
+}

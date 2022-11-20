@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+
+/* COLORS */
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+
+$Off-white: hsl(36, 100%, 99%);
+$Grayish-blue: hsl(233, 8%, 79%);
+$Dark-grayish-blue: hsl(236, 13%, 42%);
+$Very-dark-blue: hsl(240, 100%, 5%);
+
+/* FONTS */
+$inter: "Inter";
+$inter-bold: "Inter-Bold";
+$inter-ExtraBold: "Inter-ExtraBold";
+
+
+@mixin inter-bold {
+	font-family: $inter, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+@mixin inter-extra {
+	font-family: $inter;
+	font-weight: 800;
+}
+
+@mixin inter {
+	font-family: $inter;
+	font-weight: 400;
+	color: $Grayish-blue;
+}
+
+@mixin content {
+	font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+
+@mixin body-copy {
+	@include content;
+	color: $Dark-grayish-blue;
+	font-size: 15px;
+}
