@@ -1,0 +1,7 @@
+footer {
+    margin-top: 415px;
+
+    @include breakpoint(large) {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+@mixin h1 {
+    @include inter-extra;
+    font-size: 60px;
+    color: $Very-dark-blue;
+
+}
+
+@mixin h2 {
+    @include inter-bold;
+    font-size: 2em;
+}
+
+@mixin h4 {
+    @include inter-bold;
+    font-size: 1.35em;
+}
