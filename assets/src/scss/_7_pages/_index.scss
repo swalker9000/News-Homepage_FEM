@@ -24,10 +24,14 @@
             background-size: cover;
             background-repeat:none;
 
+            @include breakpoint(portrait) {
+                background-image: url("../../images/image-web-3-desktop.jpg");
+                width: auto;
+            }
+
             @include breakpoint(large) {
             height: 350px;
             width: 820px;
-            background-image: url("../../images/image-web-3-desktop.jpg");
             }
         }
 
@@ -81,6 +85,10 @@
                     font-family: $inter;
                     font-stretch: expanded;
                     letter-spacing: 6px;
+
+                    &:hover {
+                        background-color: $Very-dark-blue;
+                    }
                 }
             }
         }
@@ -110,14 +118,16 @@
             }
         }
 
-        h4 {
+        a {
             @include h4;
+            text-decoration: none;
             margin-bottom: 0;
             color: $Off-white;
 
-            @include breakpoint(large) {
-                font-size: 1.5em
+            &:hover {
+                color: $soft-orange;
             }
+           
         }
 
         p {
@@ -158,7 +168,7 @@
             flex-direction: column;
 
 
-            h2, h4 {
+            h2, a {
                 margin: 0 0 15px;
             }
 
@@ -167,9 +177,14 @@
                 color: $Grayish-blue;
             }
 
-            h4 {
+            a {
                 @include h4;
                 color: $Dark-grayish-blue;
+                text-decoration: none;
+
+                &:hover {
+                    color: $soft-red;
+                }
 
                 @include breakpoint(large) {
                     font-size: 1.2em;
